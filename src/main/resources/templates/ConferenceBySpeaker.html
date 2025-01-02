@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conférences selon les speakers </title>
+</head>
+<body>
+<thead>
+<tr>
+    <th>Id de la conférence </th>
+    <th>Titre</th>
+    <th>Date</th>
+    <th>Heure de debut</th>
+    <th>Heure Fin</th>
+    <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr th:each="conference : ${conferences}">
+    <td th:text="${conference.getId()}"></td>
+    <td th:text="${conference.getTitre()}"></td>
+    <td th:text="${conference.getdate}"></td>
+    <td th:text="${conference.getHeuredebut()}"></td>
+    <td th:text="${conference.getHeurefin()}"></td>
+    <td th:text="${conference.getDesc()}"></td>
+</tr>
+</tbody>
+</body>
+</html>
