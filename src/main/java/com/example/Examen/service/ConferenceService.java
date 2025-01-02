@@ -1,9 +1,10 @@
 package com.example.Examen.service;
 
-import com.example.Examen.dao.Mapper.ConferenceMapper;
+import com.example.Examen.Mapper.ConferenceMapper;
 import com.example.Examen.dao.entities.Conference;
 import com.example.Examen.dao.repositories.ConferenceRepository;
 import com.example.Examen.dto.ConferenceDto;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 @Service
 public class ConferenceService implements IConferenceService {
-
+    @Autowired
     private ConferenceRepository conferenceRepository;
     private ConferenceMapper conferenceMapper;
 

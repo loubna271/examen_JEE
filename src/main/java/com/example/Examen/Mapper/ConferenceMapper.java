@@ -1,4 +1,4 @@
-package com.example.Examen.dao.Mapper;
+package com.example.Examen.Mapper;
 
 import com.example.Examen.dao.entities.Conference;
 import com.example.Examen.dto.ConferenceDto;

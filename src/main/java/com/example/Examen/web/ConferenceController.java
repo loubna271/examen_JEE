@@ -33,7 +33,7 @@ public class ConferenceController {
         return "ConferenceBySpeaker";
     }
 
-    @PostMapping("nouvelleConférence")
+    @PostMapping("/nouvelleConférence")
     public String ajouterConference(@ModelAttribute("conference") ConferenceDto conferenceDto) {
         conferenceService.addConference(conferenceDto);
         return "redirect:/Conférences";
